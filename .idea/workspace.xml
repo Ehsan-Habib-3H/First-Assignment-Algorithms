@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b36862d-65cb-41c1-96c8-7e15b34ce156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercises2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +19,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cfBqwcJwV2nMO6RpmYBALtaUI4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,15 +31,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Exercises2.executor": "Run",
+    "JUnit.Test1.executor": "Run",
+    "JUnit.Test2.executor": "Run",
+    "JUnit.Test3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Mahan/Documents/Java/AP-1402/Second-Assignment-Algorithms",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Ehsan/University/Term 2/AP/First-Assignment-Algorithms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Test3">
+  <component name="RunManager" selected="Application.Exercises2">
     <configuration name="Exercises2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exercises2" />
       <module name="Second-Assignment-Algorithms" />
@@ -75,19 +85,12 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test3" />
-        <item itemvalue="JUnit.Test1" />
-        <item itemvalue="JUnit.Test2" />
         <item itemvalue="Application.Exercises2" />
+        <item itemvalue="JUnit.Test3" />
+        <item itemvalue="JUnit.Test2" />
+        <item itemvalue="JUnit.Test1" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,7 +100,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708492946192</updated>
+      <workItem from="1708717678828" duration="2138000" />
+      <workItem from="1708966112887" duration="5855000" />
+      <workItem from="1709029504597" duration="1874000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Exercises2.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

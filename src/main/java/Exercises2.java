@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Exercises2 {
 
@@ -15,6 +13,10 @@ public class Exercises2 {
 
     public int[] twoSum(int[] nums, int target) {
         // TODO
+        for (int i = 0; i < nums.length; ++i)
+            for (int j = 0; j < nums.length; ++j)
+                if (j != i && nums[i] + nums[j] == target)
+                    return new int[]{i, j};
         return null;
     }
 
@@ -49,21 +51,78 @@ public class Exercises2 {
     */
 
     public int romanToInt(String s) {
-        // TODO
-        return 0;
+        int ans = 0;
+        Map<String, Integer> hm = new HashMap<String, Integer>();
+        hm.put("I", 1);
+        hm.put("V", 5);
+        hm.put("X", 10);
+        hm.put("L", 50);
+        hm.put("C", 100);
+        hm.put("D", 500);
+        hm.put("M", 1000);
+        for (int i = 0; i < s.length(); ++i) {
+            //6 cases:
+            if (i != s.length() - 1) {
+                if (s.charAt(i) == 'I' && s.charAt(i + 1) == 'V') {
+                    ans += 4;
+                    ++i;
+                    continue;
+                } else if (s.charAt(i) == 'I' && s.charAt(i + 1) == 'X') {
+                    ans += 9;
+                    ++i;
+                    continue;
+                } else if (s.charAt(i) == 'X' && s.charAt(i + 1) == 'L') {
+                    ans += 40;
+                    ++i;
+                    continue;
+                } else if (s.charAt(i) == 'X' && s.charAt(i + 1) == 'C') {
+                    ans += 90;
+                    ++i;
+                    continue;
+                } else if (s.charAt(i) == 'C' && s.charAt(i + 1) == 'D') {
+                    ans += 400;
+                    ++i;
+                    continue;
+                } else if (s.charAt(i) == 'C' && s.charAt(i + 1) == 'M') {
+                    ans += 900;
+                    ++i;
+                    continue;
+                }
+            }
+
+            ans += hm.get(String.valueOf(s.charAt(i)));
+        }
+        return ans;
     }
 
     /*
     Given an array nums of distinct integers, return all the possible permutations.
     You can return the answer in any order.
     */
+    public void traceIt(List<Integer> current, List<Integer> perm, List<List<Integer>> result) {
+        if (current.isEmpty()) {
+            result.add(perm);
+            return;
+        }
+        for (int i = 0; i < current.size(); ++i) {
+            int num = current.get(i);
+            List<Integer> tmp = new ArrayList<>(current);
+            tmp.remove(i);
+            List<Integer> perm2 = new ArrayList<>(perm);
+            perm2.add(num);
+            traceIt(tmp, perm2, result);
+        }
+    }
 
     public List<List<Integer>> permute(int[] nums) {
-        // TODO
-        return null;
+        List<List<Integer>> permutations = new ArrayList<List<Integer>>();
+        List<Integer> current = Arrays.stream(nums).boxed().toList();
+        traceIt(current, new ArrayList<>(), permutations);
+        return permutations;
     }
 
     public static void main(String[] args) {
-        // test your code here!
+//        int [] test = {1,2,3,4};
+//        System.out.println(permute(test));
     }
 }
